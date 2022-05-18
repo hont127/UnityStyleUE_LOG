@@ -12,6 +12,7 @@
 //#define Debug_Warning(format, ...) Debug_Internal(Warning, format,##__VA_ARGS__)
 //#define Debug_Error(format, ...) Debug_Internal(Error, format,##__VA_ARGS__)
 
+//This way is better:
 #define Debug_Log(content) Debug_Internal(Log, TEXT("%s"),content)
 #define Debug_Warning(content) Debug_Internal(Warning, TEXT("%s"),content)
 #define Debug_Error(content) Debug_Internal(Error, TEXT("%s"),content)
