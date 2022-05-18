@@ -1,5 +1,9 @@
 #pragma once
 
+#define Debug_Log_FVector(fvector) Debug_Internal(Log, TEXT("%s: %s"),TEXT(#fvector), *fvector.ToString())
+#define Debug_Warning_FVector(fvector) Debug_Internal(Warning, TEXT("%s: %s"),TEXT(#fvector), *fvector.ToString())
+#define Debug_Error_FVector(fvector) Debug_Internal(Error, TEXT("%s: %s"),TEXT(#fvector), *fvector.ToString())
+
 #define Debug_Log_TEXT(format, ...) Debug_Internal(Log, TEXT(format),##__VA_ARGS__)
 #define Debug_Warning_TEXT(format, ...) Debug_Internal(Warning, TEXT(format),##__VA_ARGS__)
 #define Debug_Error_TEXT(format, ...) Debug_Internal(Error, TEXT(format),##__VA_ARGS__)
