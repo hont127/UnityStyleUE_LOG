@@ -1,5 +1,9 @@
 #pragma once
 
+#define Debug_Log_TEXT(format, ...) Debug_Internal(Log, TEXT(format),##__VA_ARGS__)
+#define Debug_Warning_TEXT(format, ...) Debug_Internal(Warning, TEXT(format),##__VA_ARGS__)
+#define Debug_Error_TEXT(format, ...) Debug_Internal(Error, TEXT(format),##__VA_ARGS__)
+
 #define Debug_Log(format, ...) Debug_Internal(Log, format,##__VA_ARGS__)
 #define Debug_Warning(format, ...) Debug_Internal(Warning, format,##__VA_ARGS__)
 #define Debug_Error(format, ...) Debug_Internal(Error, format,##__VA_ARGS__)
