@@ -4,9 +4,9 @@
 #define Debug_Warning_FVector(fvector) Debug_Internal(Warning, TEXT("%s: %s"),TEXT(#fvector), *fvector.ToString())
 #define Debug_Error_FVector(fvector) Debug_Internal(Error, TEXT("%s: %s"),TEXT(#fvector), *fvector.ToString())
 
-#define Debug_Log_TEXT(format, ...) Debug_Internal(Log, TEXT(format),##__VA_ARGS__)
-#define Debug_Warning_TEXT(format, ...) Debug_Internal(Warning, TEXT(format),##__VA_ARGS__)
-#define Debug_Error_TEXT(format, ...) Debug_Internal(Error, TEXT(format),##__VA_ARGS__)
+#define Debug_Log_Format(format, ...) Debug_Internal(Log, TEXT(format),##__VA_ARGS__)
+#define Debug_Warning_Format(format, ...) Debug_Internal(Warning, TEXT(format),##__VA_ARGS__)
+#define Debug_Error_Format(format, ...) Debug_Internal(Error, TEXT(format),##__VA_ARGS__)
 
 #define Debug_Log(content) Debug_Internal(Log, TEXT("%s"),content)
 #define Debug_Warning(content) Debug_Internal(Warning, TEXT("%s"),content)
